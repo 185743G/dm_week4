@@ -37,6 +37,4 @@ class LinearRegression:
 		expect
 		1.2474
 		"""
-		
-		pass
 	
