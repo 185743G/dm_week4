@@ -27,6 +27,16 @@ class LinearRegression:
 		array([7.2,9.2,11.7,13.7])
 		"""
 	def score(self,x,y):
+		error = self.predict(x) - y
+		return (error**2).sum()
+		"""testing(cont.)
+		importlib,reload(regression)
+		model = regression.LinearRegression()
+		model.fit(X,Y)
+		model.score(X,Y)
+		expect
+		1.2474
+		"""
 		
 		pass
 	

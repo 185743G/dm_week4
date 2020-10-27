@@ -3,6 +3,14 @@ X,Y = datasets.load_linear_example1()
 print(X)
 print(Y)
 
-# import regression
+import regression
 # model = regression.LinearRegression()
 # print(model.x)
+
+import importlib
+importlib.reload(regression)
+model = regression.LinearRegression()
+model.fit(X,Y)
+print(model.theta)
+print(model.predict(X))
+print(model.score(X,Y))
